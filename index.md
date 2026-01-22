@@ -3,8 +3,8 @@ layout: default
 title: 主页
 ---
 
-# 你好
-这里是我的安全研究与技术笔记站点，记录漏洞分析、系统机制、逆向与工程实践。
+# xxx
+xxxx
 
 ## 最近文章
 {% if site.posts and site.posts.size > 0 %}
