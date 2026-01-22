@@ -1,0 +1,84 @@
+:root{
+  --w: 860px;
+  --fg: #111;
+  --muted:#666;
+  --border: rgba(0,0,0,.12);
+  --bg:#fff;
+  --codebg:#f6f8fa;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  color:var(--fg);
+  background:var(--bg);
+  font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+}
+a{ color:inherit; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+.container{ max-width:var(--w); margin:0 auto; padding:0 16px; }
+
+.site-header{
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(180%) blur(10px);
+}
+.header-inner{ display:flex; align-items:center; justify-content:space-between; height:56px; }
+.brand{ font-weight:700; }
+.nav a{ margin-left:14px; padding:6px 8px; border-radius:10px; }
+.nav a.active{ border:1px solid var(--border); background:#fafafa; }
+
+main{ padding:22px 0 40px; }
+h1{ line-height:1.25; margin: 0 0 12px; }
+h2{ margin-top:28px; }
+
+.muted{ color:var(--muted); }
+.dot{ margin:0 8px; color:var(--muted); }
+
+.post-header{ margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid var(--border); }
+.post-title{ margin:0 0 8px; }
+.post-meta{ font-size:0.95rem; color:var(--muted); }
+
+.tag{
+  display:inline-block;
+  padding:2px 8px;
+  margin-right:6px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  font-size:0.85rem;
+}
+
+.post-list{ padding-left:18px; }
+.post-row{ margin: 16px 0; list-style: none; padding: 12px 0; border-bottom:1px solid rgba(0,0,0,.06); }
+.post-row-title a{ font-weight:600; }
+.post-row-excerpt{ margin-top:6px; }
+
+pre, code{
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+code{ background:var(--codebg); padding:2px 6px; border-radius:6px; }
+pre{
+  background:var(--codebg);
+  padding:14px;
+  border-radius:12px;
+  overflow:auto;
+  border:1px solid rgba(0,0,0,.08);
+}
+pre code{ background:transparent; padding:0; }
+
+.post-nav{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:26px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+.site-footer{
+  border-top:1px solid var(--border);
+  padding:18px 0;
+}
+.site-footer a{ text-decoration:underline; text-decoration-color: rgba(0,0,0,.25); }
