@@ -1,3 +1,19 @@
-title: test
-description: tttest
-theme: jekyll-theme-cayman
+title: "Cloud's xxx"
+description: "个人博客"
+timezone: Asia/Singapore
+lang: zh-CN
+
+# 用户主页站点（username.github.io）通常这样写
+url: "https://cloudlldb.github.io"
+baseurl: ""
+
+# 文章链接风格：/2026/01/22/title/
+permalink: /:year/:month/:day/:title/
+
+# Markdown 与高亮
+markdown: kramdown
+highlighter: rouge
+
+# 让 posts.md 用分页或其他功能时更容易扩展（可不动）
+plugins:
+  - jekyll-feed
